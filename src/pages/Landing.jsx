@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
-import { Globe, Users, Shield, ArrowRight } from "lucide-react";
+import { ArrowRight, MapPin, Play } from "lucide-react";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
-
-const BADGES = [
-  { icon: Globe, label: "ASEAN Heritage Network" },
-  { icon: Users, label: "Cultural Ambassador Matching" },
-  { icon: Shield, label: "Dual-Blind Privacy" },
-];
+import { Badge } from "../components/ui/badge";
+import { galleryItems } from "../data/gallery";
 
 export default function Landing() {
   return (
@@ -37,36 +33,74 @@ export default function Landing() {
             diaspora. Not sightseeing packages — curated return journeys with
             Cultural Ambassadors who share your roots.
           </p>
+        </div>
+      </header>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-            {BADGES.map(({ icon: Icon, label }) => (
-              <span
-                key={label}
-                className="inline-flex items-center gap-2 rounded-full border border-accent-500 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur"
-              >
-                <Icon className="h-4 w-4 text-accent-400" />
-                {label}
-              </span>
+      {/* Featured Gallery Preview */}
+      <section className="py-16 md:py-24 bg-warm-50">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-accent-600">
+              Featured Stories
+            </p>
+            <h2 className="mt-2 text-3xl font-bold text-warm-950 md:text-4xl font-display">
+              Glimpses of Home
+            </h2>
+            <p className="mt-3 max-w-xl mx-auto text-lg text-warm-600">
+              Authentic moments captured by local communities across Southeast
+              Asia.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {galleryItems.slice(0, 4).map((item) => (
+              <Link key={item.id} to="/gallery" className="group block">
+                <div className="relative overflow-hidden rounded-xl aspect-[3/4] bg-warm-100">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                  {/* Type badge */}
+                  <div className="absolute top-3 left-3">
+                    <Badge
+                      variant="outline"
+                      className="bg-white/90 backdrop-blur text-warm-800 border-0 text-xs"
+                    >
+                      {item.type === "Video" ? (
+                        <Play className="mr-1 h-3 w-3 inline" />
+                      ) : null}
+                      {item.type}
+                    </Badge>
+                  </div>
+
+                  {/* Title overlay on hover */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                    <h3 className="text-base font-semibold text-white font-display leading-tight">
+                      {item.title}
+                    </h3>
+                    <div className="flex items-center gap-1.5 mt-1 text-white/70 text-xs">
+                      <MapPin className="h-3 w-3 flex-shrink-0" />
+                      <span>{item.subtitle}</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             ))}
           </div>
 
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-10 text-center">
             <Button size="xl" asChild>
-              <Link to="/register">
-                Begin Your Return <ArrowRight className="ml-2 h-4 w-4" />
+              <Link to="/gallery">
+                View All Stories <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="xl"
-              className="border-accent-500 text-accent-400 hover:bg-accent-500/10"
-              asChild
-            >
-              <Link to="/gallery">Explore the Heritage Gallery</Link>
             </Button>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* Below-fold intro cards */}
       <section className="py-20 md:py-28 bg-white">

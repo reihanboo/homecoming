@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: ["class"],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "#12372A",
+          light: "#436850",
+          50: "#e8f0ec",
+          100: "#c5d9cf",
+          200: "#9fc0b0",
+          300: "#79a791",
+          400: "#5c9579",
+          500: "#436850",
+          600: "#3a5c47",
+          700: "#2f4d3b",
+          800: "#1e3d2d",
+          900: "#12372A",
+          950: "#0a1f17",
+        },
+        accent: {
+          DEFAULT: "#AD8B3A",
+          50: "#faf6ed",
+          100: "#f3e9d0",
+          200: "#e7d3a2",
+          300: "#d9b96e",
+          400: "#cba348",
+          500: "#AD8B3A",
+          600: "#91732F",
+          700: "#755c28",
+          800: "#5c4822",
+          900: "#4a3a1e",
+          950: "#2d2210",
+        },
+        warm: {
+          50: "#FBF9F1",
+          100: "#f5f2e5",
+          200: "#ede7d3",
+          300: "#e2dcd0",
+          400: "#d4ccb8",
+          500: "#c4b99d",
+          600: "#a89b7f",
+          700: "#8a7d65",
+          800: "#6e6451",
+          900: "#4f483d",
+          950: "#2d2d2d",
+        },
+      },
+      fontFamily: {
+        display: ["Fraunces", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        "fade-in": { from: { opacity: "0" }, to: { opacity: "1" } },
+        "fade-out": { from: { opacity: "1" }, to: { opacity: "0" } },
+        "zoom-in-95": {
+          from: { opacity: "0", transform: "scale(0.95)" },
+          to: { opacity: "1", transform: "scale(1)" },
+        },
+        "zoom-out-95": {
+          from: { opacity: "1", transform: "scale(1)" },
+          to: { opacity: "0", transform: "scale(0.95)" },
+        },
+        "slide-in-from-left": {
+          from: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.2s ease-out",
+        "fade-out": "fade-out 0.2s ease-out",
+        "zoom-in-95": "zoom-in-95 0.2s ease-out",
+        "zoom-out-95": "zoom-out-95 0.2s ease-out",
+        "slide-in-from-left": "slide-in-from-left 0.3s ease-out",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+};

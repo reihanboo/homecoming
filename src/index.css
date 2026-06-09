@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.75rem;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply font-sans bg-warm-50 text-warm-950 antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply font-display;
+    }
+}
+
+.gallery-stack::-webkit-scrollbar {
+    display: none;
+}
+.gallery-stack {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

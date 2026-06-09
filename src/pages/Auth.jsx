@@ -131,7 +131,7 @@ export function RegisterPage() {
     setLoading(true);
     const result = register(email, password);
     setLoading(false);
-    if (result.success) navigate("/dashboard");
+    if (result.success) navigate("/emotional-mapping");
     else setError(result.error);
   };
 

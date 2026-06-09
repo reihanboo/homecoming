@@ -226,7 +226,7 @@ export default function Dashboard() {
                     Heritage Country
                   </label>
                   <select
-                    value={editProfile.country}
+                    value={editProfile.country || ""}
                     onChange={(e) =>
                       setEditProfile({
                         ...editProfile,
@@ -235,6 +235,9 @@ export default function Dashboard() {
                     }
                     className="flex h-10 w-full rounded-md border border-warm-300 bg-white px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-light"
                   >
+                    <option value="" disabled>
+                      Select your heritage country
+                    </option>
                     {["Indonesia", "Philippines", "Vietnam", "Thailand"].map(
                       (c) => (
                         <option key={c} value={c}>

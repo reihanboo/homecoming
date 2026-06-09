@@ -15,6 +15,7 @@ const ExperiencesPage = lazy(() => import("./pages/ExperiencesPage"));
 const ExperienceDetail = lazy(() => import("./pages/ExperienceDetail"));
 const PartnershipsPage = lazy(() => import("./pages/PartnershipsPage"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
+const EmotionalMapping = lazy(() => import("./pages/EmotionalMapping"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 // Auth pages are small but lazy-load for consistency
@@ -67,6 +68,10 @@ export default function App() {
                     <Route path="/login" element={<LoginPage />} />
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route
+                      path="/emotional-mapping"
+                      element={<EmotionalMapping />}
+                    />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </Suspense>

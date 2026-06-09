@@ -47,7 +47,10 @@ export function AuthProvider({ children }) {
     }
     const userData = { email, name: email.split("@")[0] };
     setUser(userData);
+    // Reset profile for new users so the Emotional Mapping wizard starts fresh
+    setProfile({});
     sessionStorage.setItem("homecoming_user", JSON.stringify(userData));
+    sessionStorage.setItem("homecoming_profile", JSON.stringify({}));
     return { success: true };
   }, []);
 

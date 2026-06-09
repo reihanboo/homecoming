@@ -35,12 +35,12 @@ import { useToast } from "../context/ToastContext";
 import { experiences } from "../data/experiences";
 
 const LIFECYCLE = [
-  { step: "Discovery", desc: "Browse the Heritage Gallery", icon: Globe },
   {
     step: "Emotional Mapping",
     desc: "Complete identity assessment",
     icon: User,
   },
+  { step: "Discovery", desc: "Browse the Heritage Gallery", icon: Globe },
   { step: "Ambassador Match", desc: "Paired with a local guide", icon: User },
   {
     step: "The Return",
@@ -162,7 +162,7 @@ export default function Dashboard() {
               <CardContent>
                 <div className="grid gap-4 sm:grid-cols-4">
                   {LIFECYCLE.map((s, i) => {
-                    const done = i === 0 || !!booking;
+                    const done = !!booking;
                     const Icon = s.icon;
                     return (
                       <div

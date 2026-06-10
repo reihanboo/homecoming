@@ -7,9 +7,9 @@ export const galleryItems = [
     subtitle: "Palembang, South Sumatra",
     description:
       "The spice market opens at 5 AM. By 6, the aisles are thick with the smell of turmeric, galangal, and dried fish. These stalls have been in the same families for four generations.",
-    image:
-      "https://images.unsplash.com/photo-1512070679279-8988d32161be?auto=format&fit=crop&w=1200&q=80",
+    image: "https://i.imgur.com/6MFG84B.jpeg",
     highlights: ["Palembang", "Market life", "Spice trade"],
+    experienceId: 2,
   },
   {
     id: 2,
@@ -20,8 +20,9 @@ export const galleryItems = [
     description:
       "Monks at Thay Pagoda have performed water puppetry since the 11th century. The stage is a pond. The puppets are carved from fig wood and lacquered in layers.",
     image:
-      "https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80",
+      "https://www.vietvisiontravel.com/wp-content/uploads/2016/04/Water-Spurting-dragon.jpg",
     highlights: ["Hanoi", "Water puppetry", "Thay Pagoda"],
+    experienceId: 7,
   },
   {
     id: 3,
@@ -32,8 +33,9 @@ export const galleryItems = [
     description:
       "Each songket motif records something: a marriage, a birth, a river crossing. The gold thread is real — imported centuries ago through the Srivijaya trade network.",
     image:
-      "https://i0.wp.com/lombokdispatch.id/wp-content/uploads/2024/12/lombok-traditional-villages.jpg?auto=format&fit=crop&w=1200&q=80",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHHj_8Y03iMCZt4trWgQdj17EH_PAHgg1JoNL2d2d_9Q&s=10",
     highlights: ["Songket weaving", "Ogan Ilir", "Textile heritage"],
+    experienceId: 3,
   },
   {
     id: 4,
@@ -46,6 +48,7 @@ export const galleryItems = [
     image:
       "https://tieza.gov.ph/wp-content/uploads/slider18/gmetv-gallery-10.jpeg?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Mindanao", "Higaonon", "Architecture"],
+    experienceId: 4,
   },
   {
     id: 5,
@@ -58,6 +61,7 @@ export const galleryItems = [
     image:
       "https://www.indochinavoyages.com/wp-content/uploads/2017/05/1-The-first-imagime-will-attract-your-attention-when-you-set-your-foots-here.jpg?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Duong Lam", "Laterite", "Ancient village"],
+    experienceId: 7,
   },
   {
     id: 6,
@@ -68,8 +72,9 @@ export const galleryItems = [
     description:
       "These masks are made from coconut husks and painted by hand. Each color has meaning. The festival happens once a year, but the artisans work year-round.",
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/97/c3/03/bang-sai-royal-folk-arts.jpg?w=1200&h=1200&s=1?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Phi Ta Kon", "Dan Sai", "Mask making"],
+    experienceId: 12,
   },
   {
     id: 7,
@@ -82,6 +87,7 @@ export const galleryItems = [
     image:
       "https://www.agoda.com/wp-content/uploads/2024/04/Featured-image-Ampera-Bridge-Palembang-Indonesia-1244x700.jpg?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Musi River", "Ampera Bridge", "Palembang"],
+    experienceId: 1,
   },
   {
     id: 8,
@@ -92,8 +98,9 @@ export const galleryItems = [
     description:
       "Built before Angkor Wat, Phimai marks the end of an ancient Khmer highway from Cambodia. The stone carvings show scenes from the Ramayana.",
     image:
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/01/45/f4/20181011-091951-largejpg.jpg?w=1200&h=1200&s=1?auto=format&fit=crop&w=1200&q=80",
+      "https://homeiswhereyourbagis.b-cdn.net/wp-content/uploads/2023/03/Phimai-Historical-Park-Haupttempel-1024x576.jpg",
     highlights: ["Phimai", "Khmer", "Ancient highway"],
+    experienceId: 10,
   },
   {
     id: 9,
@@ -106,6 +113,7 @@ export const galleryItems = [
     image:
       "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Bukidnon", "Coffee", "Highland farming"],
+    experienceId: 5,
   },
   {
     id: 10,
@@ -118,6 +126,7 @@ export const galleryItems = [
     image:
       "https://battrang.museum/wp-content/uploads/2024/08/batch_IMG_2388.jpg?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Bat Trang", "Ceramics", "Kiln"],
+    experienceId: 9,
   },
   {
     id: 11,
@@ -128,8 +137,9 @@ export const galleryItems = [
     description:
       "Pempek is Palembang's defining dish. The best ones are made in home kitchens, not restaurants. This stall has been frying them since 1978.",
     image:
-      "https://thumb.viva.id/intipseleb/663x372/2024/07/10/668e28a4e9c77-benteng-kuto-besak.jpg?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=1200&q=80",
     highlights: ["Pempek", "Street food", "Palembang"],
+    experienceId: 2,
   },
   {
     id: 12,
@@ -140,7 +150,8 @@ export const galleryItems = [
     description:
       "The red swirl pottery at Ban Chiang dates back over 3,000 years. Discovered by accident by an American anthropologist in 1966. The patterns haven't been fully decoded.",
     image:
-      "https://mekongcruise.com/files/thumb/462/308/uploads/Thailand/ayutthaya-historical-park.jpg?auto=format&fit=crop&w=1200&q=80",
+      "https://thailandfoundation.or.th/wp-content/uploads/2021/06/Ban-chiang.jpg",
     highlights: ["Ban Chiang", "Bronze Age", "Pottery"],
+    experienceId: 10,
   },
 ];

@@ -1,5 +1,6 @@
 import { useState, useMemo } from "react";
 import { MapPin, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
@@ -7,7 +8,9 @@ import {
   DialogDescription,
 } from "../components/ui/dialog";
 import { Badge } from "../components/ui/badge";
+import { Button } from "../components/ui/button";
 import { galleryItems } from "../data/gallery";
+import { experiences } from "../data/experiences";
 
 const COUNTRIES = [...new Set(galleryItems.map((i) => i.country))];
 
@@ -171,6 +174,26 @@ export default function GalleryPage() {
                   </div>
                 </div>
               )}
+              {selected.experienceId &&
+                (() => {
+                  const exp = experiences.find(
+                    (e) => e.id === selected.experienceId,
+                  );
+                  if (!exp) return null;
+                  return (
+                    <div className="mt-6 pt-6 border-t border-warm-200">
+                      <p className="text-xs font-semibold uppercase tracking-wider text-warm-400 mb-2">
+                        Connected Journey
+                      </p>
+                      <p className="text-sm text-warm-600 mb-3">{exp.title}</p>
+                      <Button asChild>
+                        <Link to={`/experiences/${exp.id}`}>
+                          View Journey Details
+                        </Link>
+                      </Button>
+                    </div>
+                  );
+                })()}
             </div>
           </DialogContent>
         )}

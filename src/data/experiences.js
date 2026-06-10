@@ -89,7 +89,7 @@ export const experiences = [
       {
         name: "Ogan Ilir Weaving Community",
         desc: "A hamlet where every household has a loom. The cooperative has been running since 1982.",
-        img: "https://i0.wp.com/lombokdispatch.id/wp-content/uploads/2024/12/lombok-traditional-villages.jpg?fit=800%2C1200&ssl=1&w=640?auto=format&fit=crop&w=500&q=80",
+        img: "https://images.unsplash.com/photo-1599643478518-a76e6b9e12e8?auto=format&fit=crop&w=500&q=80",
       },
     ],
     dishes: [
@@ -273,13 +273,13 @@ export const experiences = [
     duration: 6,
     title: "Hanoi: The Herbal Medicine Market",
     banner:
-      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Seribu_Rumah_Gadang.jpg?auto=format&fit=crop&w=600&q=80",
+      "https://images.unsplash.com/photo-1555921015-5532091f6026?auto=format&fit=crop&w=600&q=80",
     desc: "Ninh Hiep market has been trading herbs for over 200 years. Vietnamese medicine doesn't separate food from treatment — the herbs in your soup are also what your grandmother used to bring down a fever. Six days learning, cooking, and distilling.",
     places: [
       {
         name: "Ninh Hiep Medicinal Herb Market",
         desc: "Rows of dried roots, barks, flowers, and fungi. Vendors will tell you what each one treats and how to cook with it.",
-        img: "https://images.unsplash.com/photo-1512070679279-8988d32161be?auto=format&fit=crop&w=500&q=80",
+        img: "https://images.unsplash.com/photo-1533900298318-6b8da08a523e?auto=format&fit=crop&w=500&q=80",
       },
     ],
     dishes: [
@@ -356,7 +356,7 @@ export const experiences = [
       {
         name: "Ban Chiang Archaeological Site",
         desc: "A UNESCO site. Red swirl pottery from the Bronze Age. The museum explains how these pieces were discovered by accident in 1966.",
-        img: "https://mekongcruise.com/files/thumb/462/308/uploads/Thailand/ayutthaya-historical-park.jpg?auto=format&fit=crop&w=500&q=80",
+        img: "https://images.unsplash.com/photo-1576020850115-2eaf8e3d0d5b?auto=format&fit=crop&w=500&q=80",
       },
     ],
     dishes: [
@@ -428,7 +428,7 @@ export const experiences = [
       {
         name: "Dan Sai Cultural Arts Institute",
         desc: "The center that preserves Phi Ta Kon mask-making. Workshops run year-round, not just during festival season.",
-        img: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/97/c3/03/bang-sai-royal-folk-arts.jpg?w=1200&h=1200&s=1?auto=format&fit=crop&w=500&q=80",
+        img: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&w=500&q=80",
       },
     ],
     dishes: [
